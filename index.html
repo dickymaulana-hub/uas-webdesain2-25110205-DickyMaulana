@@ -333,7 +333,7 @@
 
     </div>
 
-    <div id="page-menu" class="page-view" style="padding-top:76px;">
+    <div id="page-menu" class="page-view" style="padding-top:76px; background: #f0e3d3;">
 
         <div class="menu-header">
 
@@ -354,9 +354,20 @@
 
         </div>
 
+        <div class="menu-filter mb-4">
+
+            <button class="filter-btn active" data-filter="semua">Semua</button>
+            <button class="filter-btn" data-filter="cake">Cake</button>
+            <button class="filter-btn" data-filter="cookies">Cookies</button>
+            <button class="filter-btn" data-filter="pastry">Pastry</button>
+            <button class="filter-btn" data-filter="Bread">Bread</button>
+            <button class="filter-btn" data-filter="minuman">Minuman</button>
+
+        </div>
+
         <div class="row">
 
-            <div class="col-lg-3 col-md-6 mb-4">
+            <div class="col-lg-3 col-md-6 mb-4 menu-item Bread">
                 <div class="card product-card border-0 shadow-sm">
                     <img src="g2.webp" class="card-img-top">
                     <div class="card-body text-center">
@@ -364,17 +375,14 @@
                         <h5 class="font-weight-bold">Chocolate Bread</h5>
                         <h6 style="color:#FD894E;">Rp18.000</h6>
                         <button class="btn btn-sm mt-2 btn-beli" style="background:#FD894E;color:white;"
-                            data-nama="Chocolate Bread" data-harga="18000" data-toggle="modal"
-                            data-target="#detailPesanan">
-
+                            data-nama="Chocolate Bread" data-harga="18000">
                             Beli Sekarang
-
                         </button>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 mb-4">
+            <div class="col-lg-3 col-md-6 mb-4 menu-item pastry">
                 <div class="card product-card border-0 shadow-sm">
                     <img src="c2.webp" class="card-img-top">
                     <div class="card-body text-center">
@@ -382,17 +390,14 @@
                         <h5 class="font-weight-bold">Cheese Croissant</h5>
                         <h6 style="color:#FD894E;">Rp22.000</h6>
                         <button class="btn btn-sm mt-2 btn-beli" style="background:#FD894E;color:white;"
-                            data-nama="Cheese Croissant" data-harga="22000" data-toggle="modal"
-                            data-target="#detailPesanan">
-
+                            data-nama="Cheese Croissant" data-harga="22000">
                             Beli Sekarang
-
                         </button>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 mb-4">
+            <div class="col-lg-3 col-md-6 mb-4 menu-item cake">
                 <div class="card product-card border-0 shadow-sm">
                     <img src="R.webp" class="card-img-top">
                     <div class="card-body text-center">
@@ -400,34 +405,29 @@
                         <h5 class="font-weight-bold">Red Velvet Cake</h5>
                         <h6 style="color:#FD894E;">Rp185.000</h6>
                         <button class="btn btn-sm mt-2 btn-beli" style="background:#FD894E;color:white;"
-                            data-nama="Red Velvet Cake" data-harga="185000" data-toggle="modal"
-                            data-target="#detailPesanan">
-
+                            data-nama="Red Velvet Cake" data-harga="185000">
                             Beli Sekarang
-
                         </button>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 mb-4">
+            <div class="col-lg-3 col-md-6 mb-4 menu-item cake">
                 <div class="card product-card border-0 shadow-sm">
                     <img src="bik.webp" class="card-img-top">
                     <div class="card-body text-center">
                         <span class="badge mb-2">Cake</span>
                         <h5 class="font-weight-bold">Bika Ambon</h5>
-                        <h6 style="color:#FD894E;">45.000</h6>
+                        <h6 style="color:#FD894E;">Rp45.000</h6>
                         <button class="btn btn-sm mt-2 btn-beli" style="background:#FD894E;color:white;"
-                            data-nama="Bika Ambon" data-harga="45000" data-toggle="modal" data-target="#detailPesanan">
-
+                            data-nama="Bika Ambon" data-harga="45000">
                             Beli Sekarang
-
                         </button>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 mb-4">
+            <div class="col-lg-3 col-md-6 mb-4 menu-item cake">
                 <div class="card product-card border-0 shadow-sm">
                     <img src="in.jpg" class="card-img-top">
                     <div class="card-body text-center">
@@ -435,16 +435,14 @@
                         <h5 class="font-weight-bold">Egg Tart</h5>
                         <h6 style="color:#FD894E;">Rp12.000</h6>
                         <button class="btn btn-sm mt-2 btn-beli" style="background:#FD894E;color:white;"
-                            data-nama="Egg Tart" data-harga="12000" data-toggle="modal" data-target="#detailPesanan">
-
+                            data-nama="Egg Tart" data-harga="12000">
                             Beli Sekarang
-
                         </button>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 mb-4">
+            <div class="col-lg-3 col-md-6 mb-4 menu-item cake">
                 <div class="card product-card border-0 shadow-sm">
                     <img src="bro.webp" class="card-img-top">
                     <div class="card-body text-center">
@@ -452,47 +450,38 @@
                         <h5 class="font-weight-bold">Brownies Chocolate</h5>
                         <h6 style="color:#FD894E;">Rp32.000</h6>
                         <button class="btn btn-sm mt-2 btn-beli" style="background:#FD894E;color:white;"
-                            data-nama="Brownies Chocolate" data-harga="320000" data-toggle="modal"
-                            data-target="#detailPesanan">
-
+                            data-nama="Brownies Chocolate" data-harga="32000">
                             Beli Sekarang
-
                         </button>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 mb-4">
+            <div class="col-lg-3 col-md-6 mb-4 menu-item cake">
                 <div class="card product-card border-0 shadow-sm">
                     <img src="bi2.webp" class="card-img-top">
                     <div class="card-body text-center">
                         <span class="badge mb-2">Cake</span>
-                        <h5 class="font-weight-bold">Birthday cake</h5>
+                        <h5 class="font-weight-bold">Birthday Cake</h5>
                         <h6 style="color:#FD894E;">Rp45.000</h6>
                         <button class="btn btn-sm mt-2 btn-beli" style="background:#FD894E;color:white;"
-                            data-nama="Birthday Cake" data-harga="45000" data-toggle="modal"
-                            data-target="#detailPesanan">
-
+                            data-nama="Birthday Cake" data-harga="45000">
                             Beli Sekarang
-
                         </button>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 mb-4">
+            <div class="col-lg-3 col-md-6 mb-4 menu-item cookies">
                 <div class="card product-card border-0 shadow-sm">
                     <img src="ch.webp" class="card-img-top">
                     <div class="card-body text-center">
-                        <span class="badge mb-2">cookies</span>
+                        <span class="badge mb-2">Cookies</span>
                         <h5 class="font-weight-bold">Chocolate Cookies</h5>
                         <h6 style="color:#FD894E;">Rp24.000</h6>
                         <button class="btn btn-sm mt-2 btn-beli" style="background:#FD894E;color:white;"
-                            data-nama="Chocolate Cookies" data-harga="24000" data-toggle="modal"
-                            data-target="#detailPesanan">
-
+                            data-nama="Chocolate Cookies" data-harga="24000">
                             Beli Sekarang
-
                         </button>
                     </div>
                 </div>
@@ -500,286 +489,146 @@
 
         </div>
 
-        <section class="py-5" style="background:#f0e3d3;">
+        <section class="py-5" id="drink-section">
 
             <div class="container">
 
-                <div class="text-center mb-5">
-
-                    <span class="badge px-3 py-2" style="background:#FD894E;color:white;">
-
+                <div id="drink-title" class="text-center mb-5">
+                    <span class="badge px-3 py-2" style="background:#FD894E; color:white;">
                         DRINK MENU
-
                     </span>
-
-                    <h2 class="font-weight-bold mt-3" style="color:#4E433F;">
-
-                        Menu Minuman
-
-                    </h2>
-
-                    <p style="color:#6B5F59;">
-
-                        Temani roti dan pastry favoritmu dengan berbagai pilihan minuman segar.
-
-                    </p>
-
+                    <h2 class="mt-3">Menu Minuman</h2>
+                    <p>Temani roti dan pastry favoritmu dengan berbagai pilihan minuman segar.</p>
                 </div>
 
                 <div class="row">
 
-                    <div class="col-lg-3 col-md-6 mb-4">
-
+                    <div class="col-lg-3 col-md-6 mb-4 menu-item minuman">
                         <div class="card product-card border-0 shadow-sm">
-
                             <img src="https://cdn.shopify.com/s/files/1/0669/0966/7619/files/espresso-vs-americano-cups.webp?v=1745258577"
                                 class="card-img-top">
-
                             <div class="card-body text-center">
-
                                 <span class="badge mb-2">Coffee</span>
-
-                                <h5 class="font-weight-bold">
-                                    Americano
-                                </h5>
-
-                                <h6 style="color:#FD894E;">
-                                    Rp18.000
-                                </h6>
+                                <h5 class="font-weight-bold">Americano</h5>
+                                <h6 style="color:#FD894E;">Rp18.000</h6>
                                 <button class="btn btn-sm mt-2 btn-beli" style="background:#FD894E;color:white;"
-                                    data-nama="Americano" data-harga="18000" data-toggle="modal"
-                                    data-target="#detailPesanan">
-
+                                    data-nama="Americano" data-harga="18000">
                                     Beli Sekarang
-
                                 </button>
-
                             </div>
-
                         </div>
-
                     </div>
 
-                    <div class="col-lg-3 col-md-6 mb-4">
-
+                    <div class="col-lg-3 col-md-6 mb-4 menu-item minuman">
                         <div class="card product-card border-0 shadow-sm">
-
                             <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGIgChSC0wazziiOYi4f_4hrcYmOdIWEkVMpSnRs1-pHylzJDK9xMYg1qUuo1WbmT6FyunNMLXon0wLrlkfEBf4BhCIsPNj0A92vFx79E6o2mP1fmHygcACWq1AvJZbMqfFSzfo=s680-w680-h510-rw"
                                 class="card-img-top">
-
                             <div class="card-body text-center">
-
                                 <span class="badge mb-2">Coffee</span>
-
-                                <h5 class="font-weight-bold">
-                                    Cappuccino
-                                </h5>
-
-                                <h6 style="color:#FD894E;">
-                                    Rp25.000
-                                </h6>
+                                <h5 class="font-weight-bold">Cappuccino</h5>
+                                <h6 style="color:#FD894E;">Rp25.000</h6>
                                 <button class="btn btn-sm mt-2 btn-beli" style="background:#FD894E;color:white;"
-                                    data-nama="Cappuccino" data-harga="25000" data-toggle="modal"
-                                    data-target="#detailPesanan">
-
+                                    data-nama="Cappuccino" data-harga="25000">
                                     Beli Sekarang
-
                                 </button>
-
                             </div>
-
                         </div>
-
                     </div>
 
-                    <div class="col-lg-3 col-md-6 mb-4">
-
+                    <div class="col-lg-3 col-md-6 mb-4 menu-item minuman">
                         <div class="card product-card border-0 shadow-sm">
-
                             <img src="https://www.wandercooks.com/wp-content/uploads/2023/02/hot-and-iced-matcha-latte-3-1024x1536.jpg"
                                 class="card-img-top">
-
                             <div class="card-body text-center">
-
                                 <span class="badge mb-2">Non Coffee</span>
-
-                                <h5 class="font-weight-bold">
-                                    Matcha Latte
-                                </h5>
-
-                                <h6 style="color:#FD894E;">
-                                    Rp28.000
-                                </h6>
+                                <h5 class="font-weight-bold">Matcha Latte</h5>
+                                <h6 style="color:#FD894E;">Rp28.000</h6>
                                 <button class="btn btn-sm mt-2 btn-beli" style="background:#FD894E;color:white;"
-                                    data-nama="Matcha Latte" data-harga="28000" data-toggle="modal"
-                                    data-target="#detailPesanan">
-
+                                    data-nama="Matcha Latte" data-harga="28000">
                                     Beli Sekarang
-
                                 </button>
-
                             </div>
-
                         </div>
-
                     </div>
 
-                    <div class="col-lg-3 col-md-6 mb-4">
-
+                    <div class="col-lg-3 col-md-6 mb-4 menu-item minuman">
                         <div class="card product-card border-0 shadow-sm">
-
                             <img src="https://www.foulmouthgourmet.com/wp-content/uploads/2023/01/IMG_1110.jpg"
                                 class="card-img-top">
-
                             <div class="card-body text-center">
-
                                 <span class="badge mb-2">Chocolate</span>
-
-                                <h5 class="font-weight-bold">
-                                    Chocolate Latte
-                                </h5>
-
-                                <h6 style="color:#FD894E;">
-                                    Rp27.000
-                                </h6>
+                                <h5 class="font-weight-bold">Chocolate Latte</h5>
+                                <h6 style="color:#FD894E;">Rp27.000</h6>
                                 <button class="btn btn-sm mt-2 btn-beli" style="background:#FD894E;color:white;"
-                                    data-nama="Chocolate Latte" data-harga="27000" data-toggle="modal"
-                                    data-target="#detailPesanan">
-
+                                    data-nama="Chocolate Latte" data-harga="27000">
                                     Beli Sekarang
-
                                 </button>
                             </div>
-
                         </div>
-
                     </div>
 
-                    <div class="col-lg-3 col-md-6 mb-4">
-
+                    <div class="col-lg-3 col-md-6 mb-4 menu-item minuman">
                         <div class="card product-card border-0 shadow-sm">
-
                             <img src="https://tse2.mm.bing.net/th/id/OIP.Z2B-z1ALBYt_DXnV6Ner0QHaJQ?rs=1&pid=ImgDetMain&o=7&rm=3"
                                 class="card-img-top">
-
                             <div class="card-body text-center">
-
                                 <span class="badge mb-2">Tea</span>
-
-                                <h5 class="font-weight-bold">
-                                    Thai Tea
-                                </h5>
-
-                                <h6 style="color:#FD894E;">
-                                    Rp22.000
-                                </h6>
+                                <h5 class="font-weight-bold">Thai Tea</h5>
+                                <h6 style="color:#FD894E;">Rp22.000</h6>
                                 <button class="btn btn-sm mt-2 btn-beli" style="background:#FD894E;color:white;"
-                                    data-nama="Thai Tea" data-harga="22000" data-toggle="modal"
-                                    data-target="#detailPesanan">
-
+                                    data-nama="Thai Tea" data-harga="22000">
                                     Beli Sekarang
-
                                 </button>
-
                             </div>
-
                         </div>
-
                     </div>
 
-                    <div class="col-lg-3 col-md-6 mb-4">
-
+                    <div class="col-lg-3 col-md-6 mb-4 menu-item minuman">
                         <div class="card product-card border-0 shadow-sm">
-
                             <img src="https://insanelygoodrecipes.com/wp-content/uploads/2023/12/Strawberry-Milk-in-Glass-Top-View.jpg"
                                 class="card-img-top">
-
                             <div class="card-body text-center">
-
                                 <span class="badge mb-2">Milk</span>
-
-                                <h5 class="font-weight-bold">
-                                    Strawberry Milk
-                                </h5>
-
-                                <h6 style="color:#FD894E;">
-                                    Rp25.000
-                                </h6>
+                                <h5 class="font-weight-bold">Strawberry Milk</h5>
+                                <h6 style="color:#FD894E;">Rp25.000</h6>
                                 <button class="btn btn-sm mt-2 btn-beli" style="background:#FD894E;color:white;"
-                                    data-nama="Strawberry Milk" data-harga="25000" data-toggle="modal"
-                                    data-target="#detailPesanan">
-
+                                    data-nama="Strawberry Milk" data-harga="25000">
                                     Beli Sekarang
-
                                 </button>
-
                             </div>
-
                         </div>
-
                     </div>
 
-                    <div class="col-lg-3 col-md-6 mb-4">
-
+                    <div class="col-lg-3 col-md-6 mb-4 menu-item minuman">
                         <div class="card product-card border-0 shadow-sm">
-
                             <img src="data:image/webp;base64,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"
                                 class="card-img-top">
-
                             <div class="card-body text-center">
-
                                 <span class="badge mb-2">Tea</span>
-
-                                <h5 class="font-weight-bold">
-                                    Lemon Tea
-                                </h5>
-
-                                <h6 style="color:#FD894E;">
-                                    Rp18.000
-                                </h6>
+                                <h5 class="font-weight-bold">Lemon Tea</h5>
+                                <h6 style="color:#FD894E;">Rp18.000</h6>
                                 <button class="btn btn-sm mt-2 btn-beli" style="background:#FD894E;color:white;"
-                                    data-nama="Lemon Tea" data-harga="18000" data-toggle="modal"
-                                    data-target="#detailPesanan">
-
+                                    data-nama="Lemon Tea" data-harga="18000">
                                     Beli Sekarang
-
                                 </button>
                             </div>
-
                         </div>
-
                     </div>
 
-                    <div class="col-lg-3 col-md-6 mb-4">
-
+                    <div class="col-lg-3 col-md-6 mb-4 menu-item minuman">
                         <div class="card product-card border-0 shadow-sm">
-
                             <img src="https://media.istockphoto.com/id/998885676/photo/a-cup-of-hot-cafe-latte-served-hot.jpg?s=170667a&w=0&k=20&c=r9SFdbdfn3g7lzkCjrM7xqWw-AT_WyW2UqO4cPLOMxk="
                                 class="card-img-top">
-
                             <div class="card-body text-center">
-
                                 <span class="badge mb-2">Coffee</span>
-
-                                <h5 class="font-weight-bold">
-                                    Cafe Latte
-                                </h5>
-
-                                <h6 style="color:#FD894E;">
-                                    Rp28.000
-                                </h6>
+                                <h5 class="font-weight-bold">Cafe Latte</h5>
+                                <h6 style="color:#FD894E;">Rp28.000</h6>
                                 <button class="btn btn-sm mt-2 btn-beli" style="background:#FD894E;color:white;"
-                                    data-nama="Cafe Latte" data-harga="28000" data-toggle="modal"
-                                    data-target="#detailPesanan">
-
+                                    data-nama="Cafe Latte" data-harga="28000">
                                     Beli Sekarang
-
                                 </button>
-
                             </div>
-
                         </div>
-
                     </div>
 
                 </div>
@@ -796,20 +645,32 @@
 
             <div class="container">
 
-                <div class="text-center mb-5">
+                <div class="row align-items-center about-hero mb-5">
 
-                    <span class="badge px-3 py-2 mb-3" style="background:#FD894E;color:white;">
-                        About Us
-                    </span>
+                    <div class="col-lg-5 mb-4 mb-lg-0">
 
-                    <h2 class="font-weight-bold tentang-title">
-                        Tentang D'OVEN Bakery
-                    </h2>
+                        <img src="te.jpg" class="img-fluid shadow tentang-img">
 
-                    <p class="text-muted">
-                        Menyajikan roti, cake, pastry, cookies, dan minuman berkualitas
-                        dengan bahan premium dan dibuat fresh setiap hari.
-                    </p>
+                    </div>
+
+                    <div class="col-lg-7">
+
+                        <span class="badge px-3 py-2 mb-3" style="background:#FD894E;color:white;">
+                            About Us
+                        </span>
+
+                        <h2 class="font-weight-bold tentang-title">
+                            Tentang D'OVEN Bakery
+                        </h2>
+
+
+
+                        <p class="text-muted">
+                            Menyajikan roti, cake, pastry, cookies, dan minuman berkualitas
+                            dengan bahan premium dan dibuat fresh setiap hari.
+                        </p>
+
+                    </div>
 
                 </div>
 
@@ -1199,17 +1060,35 @@
 
                     <div class="col-lg-4 mb-4">
 
-                        <h5 class="text-white">
+                        <h5 class="text-white font-weight-bold">
                             Menu
                         </h5>
 
                         <ul class="list-unstyled">
 
-                            <li><a href="#" class="text-light">Home</a></li>
-                            <li><a href="#" class="text-light">Menu</a></li>
-                            <li><a href="#" class="text-light">Tentang</a></li>
-                            <li><a href="#" class="text-light">Kontak</a></li>
+                            <li>
+                                <a href="#" class="text-light" data-page="home">
+                                    Home
+                                </a>
+                            </li>
 
+                            <li>
+                                <a href="#" class="text-light" data-page="menu">
+                                    Menu
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="text-light" data-page="tentang">
+                                    Tentang
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="text-light" data-page="kontak">
+                                    Kontak
+                                </a>
+                            </li>
                         </ul>
 
                     </div>
@@ -1224,7 +1103,7 @@
 
                             Senin - Minggu
                             <br>
-                            07.00 - 21.00 WIB
+                            07.00 - 22.00 WIB
 
                         </p>
 
