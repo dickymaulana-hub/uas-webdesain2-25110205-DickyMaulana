@@ -49,14 +49,20 @@ document.querySelectorAll('[data-page]').forEach(function (el) {
 
 
 // VALIDASI TOMBOL BELI SEKARANG
-document.querySelectorAll('[data-toggle="modal"]').forEach(function (btn) {
+document.querySelectorAll(".btn-beli").forEach(function (btn) {
+
     btn.addEventListener("click", function (e) {
+
         e.preventDefault();
 
-        if (confirm("Apakah Anda yakin ingin membeli produk ini?")) {
-            $($(this).data("target")).modal("show");
+        if (!confirm("Apakah Anda yakin ingin membeli produk ini?")) {
+            return;
         }
+
+        $("#detailPesanan").modal("show");
+
     });
+
 });
 
 // VALIDASI FORM KIRIM PESAN
@@ -153,5 +159,67 @@ document.getElementById("btnPesan").addEventListener("click", function () {
     );
 
     $("#detailPesanan").modal("hide");
+
+});
+
+// ================= FILTER MENU =================
+
+const filterButtons = document.querySelectorAll('.filter-btn');
+const menuItems = document.querySelectorAll('.menu-item');
+const drinkTitle = document.getElementById('drink-title');
+const drinkSection = document.getElementById('drink-section');
+
+filterButtons.forEach(function (button) {
+
+    button.addEventListener('click', function () {
+
+        // Active button
+        filterButtons.forEach(function (btn) {
+            btn.classList.remove('active');
+        });
+
+        this.classList.add('active');
+
+        const filter = this.getAttribute('data-filter');
+
+        let adaMinuman = false;
+
+        menuItems.forEach(function (item) {
+
+            if (filter === 'semua' || item.classList.contains(filter)) {
+
+                item.style.display = '';
+
+                if (item.classList.contains('minuman')) {
+                    adaMinuman = true;
+                }
+
+            } else {
+
+                item.style.display = 'none';
+
+            }
+
+        });
+
+        // Tampilkan / sembunyikan section minuman
+        if (filter === 'semua') {
+
+            drinkSection.style.display = 'block';
+            drinkTitle.style.display = 'block';
+
+        } else if (adaMinuman) {
+
+            drinkSection.style.display = 'block';
+            drinkTitle.style.display = 'block';
+
+        } else {
+
+            drinkSection.style.display = 'none';
+            drinkTitle.style.display = 'none';
+
+        }
+
+    });
 
 });
